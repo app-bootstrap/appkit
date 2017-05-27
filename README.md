@@ -17,12 +17,37 @@
 [download-image]: https://img.shields.io/npm/dm/app-debug.svg?style=flat-square
 [download-url]: https://npmjs.org/package/app-debug
 
-> app-debug
+> app debug
 
 ## Installment
 
-```shell
+``` bash
 $ npm i app-debug -g
+```
+
+## Usage
+
+### openurl
+
+``` bash
+$ app-debug openurl https://www.google.com
+```
+### gps
+
+``` bash
+$ app-debug gps 121.49612 31.24010
+```
+
+### install
+
+``` bash
+$ app-debug install xxx.apk or app
+```
+
+### start
+
+``` bash
+$ app-debug start processid
 ```
 
 ## License

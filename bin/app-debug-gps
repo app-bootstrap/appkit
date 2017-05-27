@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var co = require('co');
+var path = require('path');
+var program = require('commander');
+var validator = require('validator');
+
+var _ = require('../lib/common/helper');
+var logger = require('../lib/common/logger');
+
+var options = {
+  verbose: false
+};
+
+program
+  .option('--verbose',      'show more debugging information')
+  .parse(process.argv);
+
+_.merge(options, _.getConfig(program));
+
+const url = program.args[0];
+
+// TODO
+//
+// adb -s  emu geo fix 111 39 Android Emulator
+// gpsFaker for iOS simulator
+
+co(function * () {
+  console.log('-------i-------')
+});
