@@ -30,6 +30,15 @@ if (!isUrl) {
 
 logger.info(`open url: ${url}`);
 
+// TODO
+//
+// for iOS Simulator
+// var cmd = `xcrun simctl openurl "${this.deviceId}" "${url}"`; 
+//
+// for Android
+// const cmd = `am start -a android.intent.action.VIEW -d ${url}`;
+// yield this.adb.shell(cmd);
+
 co(function * () {
   console.log('-------i-------')
 });
